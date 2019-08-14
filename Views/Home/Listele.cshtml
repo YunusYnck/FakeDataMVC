@@ -1,0 +1,19 @@
+﻿@model IEnumerable<FakeData_MVC.Models.Personel>
+@{
+    ViewBag.Title = "Listele";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Personel Listesi</h2>
+
+@foreach (var item in Model)
+{
+<li>
+    @item.Ad
+    @item.Soyad
+    @item.Yas
+    @item.Ulke
+</li>
+ 
+
+}
